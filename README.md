@@ -5,6 +5,8 @@ Copy .env.example to .env
 
 Configure local domain to public folder
 
+Configure database connection
+
 Run
 
 ```bash
