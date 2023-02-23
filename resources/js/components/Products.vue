@@ -11,6 +11,9 @@
                         Add consumption
                     </el-button>
                 </el-col>
+                <el-col span="4">
+                    <a href="/logout">Logout</a>
+                </el-col>
             </el-row>
             <el-table :data="tableData" style="width: 100%">
                 <el-table-column prop="id" label="Id" width="180" />

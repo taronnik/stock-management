@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])
     ->name('login')
     ->middleware('guest');
+Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout'])
+    ->middleware('auth');
 Route::get('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'showRegisterForm'])
     ->middleware('guest');
 Route::get('/products', [\App\Http\Controllers\ProductController::class, 'show'])
