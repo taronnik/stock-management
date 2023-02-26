@@ -10,6 +10,10 @@ Configure database connection
 Run
 
 ```bash
+  composer install
+```
+
+```bash
   php artisan migrate:seed
 ```
 
